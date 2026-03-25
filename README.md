@@ -1,9 +1,10 @@
-Library Manager
+# Library Manager
 
 Desktop application for managing a library system with admin and user roles.
 Built using C#, WPF, MVVM, and SQL Server LocalDB.
 
-Features
+## Features
+
 Login system (Admin / User)
 Add books
 Edit books
@@ -19,18 +20,21 @@ ICommand (RelayCommand implementation)
 INotifyPropertyChanged
 ObservableCollection data binding
 
-Technologies
+## Technologies
+
 C#
 WPF
 .NET
 SQL Server LocalDB
 MVVM pattern
 
-Future Improvements
+## Future Improvements
+
 Return book functionality
 LINQ statistics 
 Filters and sorting (OrderBy)
 UI improvements (modern design)
 
-Author
+## Author
+
 Saša Vulić
