@@ -1,0 +1,22 @@
+﻿<Window x:Class="Library_Manager.EditBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library_Manager"
+        mc:Ignorable="d"
+        Title="EditBook" Height="450" Width="500">
+    <Grid>
+        <Label Content="Edit Book" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="24" Margin="0,20,0,0"/>
+        <Label Content="Title:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,100,0,0" FontSize="16"/>
+        <TextBox x:Name="Title" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,100,0,0" Width="200" Height="30" FontSize="16" Text="{Binding EditingBook.Title}"/>
+        <Label Content="Author:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,150,0,0" FontSize="16"/>
+        <TextBox x:Name="Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,150,0,0" Width="200" Height="30" FontSize="16" Text="{Binding EditingBook.Author}"/>
+        <Label Content="Genre:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,200,0,0" FontSize="16"/>
+        <TextBox x:Name="Genre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,200,0,0" Width="200" Height="30" FontSize="16" Text="{Binding EditingBook.Genre}"/>
+        <Label Content="Quantity:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="50,250,0,0" FontSize="16"/>
+        <TextBox x:Name="Quantity" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,250,0,0" Width="200" Height="30" FontSize="16" Text="{Binding EditingBook.Quantity}"/>
+        <Button Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,298,0,0" Width="100" Height="30" FontSize="16" Command="{Binding SaveChanges}"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="279,298,0,0" Width="100" Height="30" FontSize="16" Command="{Binding CancelChanges}"/>
+    </Grid>
+</Window>
